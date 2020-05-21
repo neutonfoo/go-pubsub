@@ -4,9 +4,15 @@ Basic implementation of Google Cloud's Pub/Sub in Go. Subscriber consumes 5 mess
 
 ## Set Up
 
-Enable the Pub/Sub API for the project.
+Create Project and enable Pub/Sub API for the project.
+
+Install the Google Cloud SDK `https://cloud.google.com/sdk/docs/quickstart-macos`.
+
+Install the Google Cloud Go Libraries `go get -u cloud.google.com/go/pubsub`.
 
 Create Server Account under Project with roles: "Pub/Sub Publisher" and "Pub/Sub Subscriber". Generate key and save into `keys` folder.
+
+Create topic and subscriber
 
 ```sh
 # Create topic
@@ -30,12 +36,10 @@ First execute subscriber
 
 ```sh
 go run subscriber/sub.go
-
 ```
 
 Then execute publisher
 
 ```sh
 go run publisher/pub.go
-
 ```
