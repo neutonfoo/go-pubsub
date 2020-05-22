@@ -11,9 +11,6 @@ import (
 )
 
 func pullMsgs(w io.Writer, projectID, subID string) error {
-	// projectID := "my-project-id"
-	// subID := "my-sub"
-	// topic of type https://godoc.org/cloud.google.com/go/pubsub#Topic
 	ctx := context.Background()
 	client, err := pubsub.NewClient(ctx, projectID)
 	if err != nil {

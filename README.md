@@ -2,6 +2,8 @@
 
 Basic implementation of Google Cloud's Pub/Sub in Go. Subscriber consumes 5 messages before exiting.
 
+Based on https://cloud.google.com/pubsub/docs/quickstart-client-libraries
+
 ## Set Up
 
 Create Project and enable Pub/Sub API for the project.
